@@ -2,13 +2,13 @@ Source: mentohust
 Section: net
 Priority: optional
 Maintainer: GengYu Rao <zouyoo@outlook.com>
-Build-Depends: debhelper (>= 10), libpcap-dev, libc6 (>= 2.0), gettext
+Build-Depends: debhelper (>= 10), libpcap-dev, gettext
 Standards-Version: 4.1.0
 Homepage: https://github.com/hyrathb/mentohust
 
 Package: mentohust
 Architecture: any
-Depends:${misc:Depends},  ${shlibs:Depends}
+Depends:${misc:Depends},${shlibs:Depends}
 Description: Opensource substitute of Ruijie and Cernet supplicant 
  on Linux and MacOS from HustMoon Studio. 
  .
