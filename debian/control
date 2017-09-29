@@ -1,13 +1,18 @@
 Source: mentohust
 Section: net
 Priority: optional
-Maintainer: HustMoon <mentohust@ehust.co.cc>
-Build-Depends: debhelper (>= 7), autotools-dev
-Standards-Version: 3.8.1
-Homepage: http://code.google.com/p/mentohust/
+Maintainer: GengYu Rao <zouyoo@outlook.com>
+Build-Depends: debhelper (>= 10), libpcap-dev, libc6 (>= 2.0), gettext
+Standards-Version: 4.1.0
+Homepage: https://github.com/hyrathb/mentohust
 
 Package: mentohust
 Architecture: any
-Depends: libpcap0.8 | libpcap0.9 | libpcap1.0 | libpcap1
-Description: A Ruijie and Cernet supplicant on Linux and MacOS from HustMoon Studio
- See /usr/share/doc/mentohust/README for more information.
+Depends:${misc:Depends},  ${shlibs:Depends}
+Description: Opensource substitute of Ruijie and Cernet supplicant 
+ on Linux and MacOS from HustMoon Studio. 
+ .
+ this is used to connect your PC to many campus networks in China ,
+ which have adopted some special methods using the Ruijie
+ and other supplicants most of those supplicants are 
+ closed source and no longer maintained.

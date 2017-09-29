@@ -1,0 +1,112 @@
+.TH MENTOHUST 1 "2017-9-16"
+
+.SH NAME
+mentohust \- A Ruijie and Cernet supplicant on Linux and MacOS
+
+.SH SYNOPSIS
+.B mentohust
+[-option][value] ...
+
+.SH DESCRIPTION
+.PP
+mentohust is a Ruijie and Cernet supplicant on Linux and MacOS.
+.br
+See \fI/usr/share/doc/mentohust/README\fR for more information.
+
+.PP
+Type
+.B mentohust -h
+and see \fI/usr/share/doc/mentohust/README\fR for usage.
+
+.PP
+Homepage: http://mentohust.googlecode.com/
+.br
+E-mail: www.ehust@gmail.com
+
+.SH COMMANDS
+
+.TP
+.B \-h
+show help information
+.TP
+.B \-K
+-k(exit) other(restart)
+.TP
+.B \-w
+save parameters to configuration file
+.TP
+.B \-u
+username
+.TP
+.B \-p
+password
+.TP
+.B \-n
+net card name
+.TP
+.B \-i
+IP[default to localhost's netmask]
+.TP
+.B \-m
+netmask[default to localhost's netmask]
+.TP
+.B \-g
+gateway[default to 0.0.0.0]
+.TP
+.B \-s
+DNS[default to 0.0.0.0]
+.TP
+.B \-o
+Ping host[default to 0.0.0.0,i.e. disable this function]
+.TP
+.B \-t
+authenticate timeout(s)[default to 8s)
+.TP
+.B \-e
+heartbeat timeout(s)[default to 30s)
+.TP
+.B \-r
+wait on failure timeout(s)[default to 15s)
+.TP
+.B \-l
+max failure times([0 means no limit,default to 8)
+.TP
+.B \-a
+mulcast address:0(standard) 1(ruijjie) 2(saier) [default to 0]
+.TP
+.B \-d
+DHCP type:0(not in used),1(secondary authenticate) 2(post authenticate) 3(pre authenticate) [default to 0]
+.TP
+.B \-b
+run in demon mode:0(yes) 1(yes,turn off output) 2(yes,persevere output) 2(yes,output to file) [default to 0}
+.TP
+.B \-y
+display notification:0(no) 1-20(yes)[default to 5]
+.TP
+.B \-v
+client version[default to 0.00,compatible with xrgsu]
+.TP
+.B \-f
+customized data file[not in used by default]
+.TP
+.B \-c
+DHCP script[use dhclient by default]
+.TP
+.B \-q
+display content from SuConfig.dat(such as -q/path/SuConfig.dat)
+
+.SH EXAMPLES
+.TP
+mentohust -u [username] -p [passwd] -n eth0 
+
+.SH AUTHOR
+.PP
+mentohust was written by HustMoon <www.ehust@gmail.com>
+.br
+and kkHAIKE <kkHAIKE@gmail.com>.
+.br
+It is now maintained by YunRi Hu <hyrathb@gmail.com>.
+.br
+This manual page was written by HustMoon <www.ehust@gmail.com> 
+.br
+and GengYu Rao <zouyoo@outlook.com>.
